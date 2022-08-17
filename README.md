@@ -46,22 +46,25 @@ The code snippets are below:
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  min-width: 300px;
+  margin-top: 5%;
 }
 ```
 
 ```css
-.container .qr-code {
-  width: 250px;
+.card {
+  max-width: 285px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 15px hsl(217, 8%, 61%, 0.05);
+  padding: 13px;
+}
+```
+
+```css
+.card-img {
+  max-width: 100%;
   border-radius: 10px;
-  background-color: hsl(0, 0%, 99%);
-  box-shadow: 50px;
-  margin-top: 110px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: block;
 }
 ```
 
