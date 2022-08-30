@@ -31,6 +31,11 @@ main {
 .card-img {
   max-width: 100%;
   border-radius: 10px;
+
+  background: #2c7dfa;
+  transition-duration: 1s;
+  transition-property: background, transform;
+  transition-timing-function: cubic-bezier(1, 0.11, 22, 1.41);
 }
 
 .card h1 {
@@ -53,4 +58,17 @@ main {
   text-align: center;
   color: hsl(228, 45%, 44%);
   padding-top: 50px;
+}
+
+/* Transition */
+.card h1:hover {
+  color: #2c7dfa;
+}
+
+.card p:hover {
+  color: black;
+}
+
+.card-img:hover {
+  transform: rotate(90deg);
 }
