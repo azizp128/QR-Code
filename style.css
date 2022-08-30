@@ -1,45 +1,51 @@
+* {
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+}
+
 body {
   margin: 0;
   background-color: hsl(212, 45%, 89%);
 }
 
 .container {
+  margin-top: 5em;
+}
+
+main {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5%;
+  place-content: center;
+  align-self: center;
 }
 
 .card {
-  max-width: 285px;
+  width: 90%;
+  max-width: 320px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 5px 15px hsl(217, 8%, 61%, 0.05);
-  padding: 13px;
+  padding: 1em;
 }
 
 .card-img {
   max-width: 100%;
   border-radius: 10px;
-  display: block;
 }
 
-.card-title {
-  font-family: "Outfit", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: hsl(218, 44%, 22%);
+.card h1 {
+  font-weight: 900;
+  font-size: 1.4rem;
   text-align: center;
-  padding: 25px 20px 20px 20px;
+  padding: 0 1em;
 }
 
-.card-detail {
-  font-family: "Outfit", sans-serif;
+.card p {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1rem;
   color: hsl(220, 15%, 55%);
   text-align: center;
-  padding: 0 20px;
+  padding: 0 1em;
 }
 
 .attribution {
